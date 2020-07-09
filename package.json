@@ -1,0 +1,25 @@
+{
+  "name": "water-plants-reminder",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon ./index.js --ignore *.json",
+    "prod": "NODE_ENV=production node ./index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "nodemon": "^2.0.4"
+  },
+  "dependencies": {
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "lowdb": "^1.0.0",
+    "node-cron": "^2.0.3",
+    "node-fetch": "^2.6.0",
+    "shortid": "^2.2.15",
+    "twilio": "^3.47.0"
+  }
+}
