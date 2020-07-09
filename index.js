@@ -5,10 +5,11 @@ require('dotenv').config()
 const cron = require('node-cron')
 
 // Local imports
-require('./express') // Starts web server inside
 const twilio = require('./helpers/twilio')
 const db = require('./helpers/db')
 const { fetchWeatherData } = require('./helpers/fetch')
+db.write('System starting up...')
+require('./express') // Starts web server inside
 const {
     getPercipitationAverage,
     getAverageDayTemperature,
@@ -18,7 +19,6 @@ const {
 const PERCIPITATION_TRIGGER_POINT = 0.5
 const TEMPERATURE_TRIGGER_POINT = 25
 
-db.write('System starting up...')
 
 // Morning routine -----------------------------------------
 const runMorning = async () => {
