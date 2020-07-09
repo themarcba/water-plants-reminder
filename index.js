@@ -8,7 +8,6 @@ const cron = require('node-cron')
 const twilio = require('./helpers/twilio')
 const db = require('./helpers/db')
 const { fetchWeatherData } = require('./helpers/fetch')
-db.write('System starting up...')
 require('./express') // Starts web server inside
 const {
     getPercipitationAverage,
