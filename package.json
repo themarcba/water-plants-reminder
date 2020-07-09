@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "dev": "nodemon ./index.js --ignore *.json",
-    "prod": "NODE_ENV=production node ./index.js"
+    "start": "NODE_ENV=production node ./index.js"
   },
   "keywords": [],
   "author": "",
