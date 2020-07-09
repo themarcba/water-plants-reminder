@@ -18,6 +18,8 @@ const {
 const PERCIPITATION_TRIGGER_POINT = 0.5
 const TEMPERATURE_TRIGGER_POINT = 25
 
+db.write('System starting up...')
+
 // Morning routine -----------------------------------------
 const runMorning = async () => {
     try {
@@ -69,5 +71,3 @@ cron.schedule('0 8 * * *', function () {
 cron.schedule('0 18 * * *', function () {
     runEvening()
 })
-
-runMorning()

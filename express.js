@@ -12,6 +12,9 @@ app.get('/log', (req, res) => {
 })
 
 // Init Ecpress server
-app.listen(port, () => console.log(`Server running (:${port})`))
+app.listen(port, () => {
+    console.log(`Server running (:${port})`)
+    db.write('Express.js up and running 👍')
+})
 
 module.exports = app
