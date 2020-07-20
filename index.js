@@ -16,7 +16,7 @@ const {
 
 // Constants -----------------------------------------------
 const PERCIPITATION_TRIGGER_POINT = 0.5
-const TEMPERATURE_TRIGGER_POINT = 25
+const TEMPERATURE_TRIGGER_POINT = 20
 
 
 // Morning routine -----------------------------------------
@@ -64,9 +64,9 @@ const runEvening = async () => {
 }
 
 // Schedule routines
-cron.schedule('0 8 * * *', function () {
+cron.schedule('0 9 * * *', function () {
     runMorning()
 })
-cron.schedule('0 18 * * *', function () {
+cron.schedule('0 19 * * *', function () {
     runEvening()
 })
