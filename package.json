@@ -19,7 +19,7 @@
     "loadash": "^1.0.0",
     "lowdb": "^1.0.0",
     "node-cron": "^2.0.3",
-    "node-fetch": "^2.6.0",
+    "node-fetch": "^2.6.7",
     "shortid": "^2.2.15",
     "twilio": "^3.47.0"
   }
